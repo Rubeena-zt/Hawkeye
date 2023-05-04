@@ -5,24 +5,45 @@ const HawkeyeHeader = () => {
   return (
     <View style={styles.header_main}>
       <View style={styles.header_top}>
-        <Text>Hawkeye</Text>
+        <Text style={styles.header_text}>Hawkeye</Text>
+        <Text style={styles.header_text2}>Your remote eye</Text>
+        <Text style={styles.subHeader}>Chempaka International</Text>
       </View>
-      <View style={styles.header_top2}></View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   header_main: {
+    height: 200,
     backgroundColor: '#1d3882',
-    height:200,
-    borderBottomEndRadius:10
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
+    // borderRadius:50,
+    paddingLeft: 20,
   },
   header_top: {
-    color: 'black',
+    flex: 1,
+    fontSize: '20',
+    // justifyContent: 'start',
+    // alignItems: 'left',
   },
-  header_top2: {
-    color: 'black',
+  header_text: {
+    fontSize: 42,
+    fontWeight: '400',
+    fontFamily: 'sans-serif',
+    color: '#ffffff',
+    marginTop: 25,
+  },
+  header_text2: {
+    fontSize: 15,
+    fontWeight: '500',
+  },
+  subHeader: {
+    fontSize: 20,
+    marginTop: 15,
+    color: '#d3db3d',
+    fontWeight: 500,
   },
 });
 
