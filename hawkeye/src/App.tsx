@@ -3,6 +3,7 @@ import {StyleSheet, Text, View, Image} from 'react-native';
 import HawkeyeHeader from './Hawkeye/HawkeyeHeader';
 import HawkeyeHeaderRight from './Hawkeye/HawkeyeHeaderRight';
 import Parent from './Hawkeye/Parent';
+import Button from './Hawkeye/Button/Button';
 
 function App(): JSX.Element {
   return (
@@ -24,11 +25,12 @@ function App(): JSX.Element {
       <View>
         <Parent />
       </View>
-
       <View>
-        <Text>hello world</Text>
+        <Text style={styles.message}>Your Bus will arrive in 10 mts</Text>
+        <Text style={styles.apply}>Apply Leave</Text>
       </View>
       <View>
+        {/* <Button /> */}
         <Text>fyeffdsj</Text>
       </View>
     </View>
@@ -43,19 +45,36 @@ const styles = StyleSheet.create({
   },
   hawkeye_top_part: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     backgroundColor: '#1d3882',
     borderBottomLeftRadius: 40,
-    borderBottomRightRadius: 60,
+    borderBottomRightRadius: 50,
   },
   header_left: {},
   header_right: {},
   image_bus: {
-    width: 140,
-    height: 100,
+    width: 170,
+    height: 150,
     marginTop: 100,
     resizeMode: 'stretch',
-    marginLeft: 230,
-    marginTop: -80,
+    marginLeft: 220,
+    marginTop: -120,
+  },
+  message: {
+    color: 'red',
+    marginTop: 20,
+    fontSize: 16,
+    textAlign: 'center',
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  apply: {
+    color: '#584fd1',
+    textDecorationLine: 'underline',
+    textDecorationColor: '#584fd1',
+    fontWeight: 'bold',
+    fontSize: 15,
+    textAlign: 'center',
   },
 });
 

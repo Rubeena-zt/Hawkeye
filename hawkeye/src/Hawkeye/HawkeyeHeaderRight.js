@@ -21,18 +21,18 @@ const styles = StyleSheet.create({
   image: {
     width: 15,
     height: 15,
-    marginRight:5,
+    marginRight:6,
   },
   top_right:{
     flexDirection:'row',
-    // justifyContent:'center',
-    // alignItems:'center',
-    marginTop:20,
-    // marginRight:20,
+    marginTop:30,
+    paddingRight:20,
+    alignItems:'center',
+
   },
   text_top:{
     fontWeight:600,
-    fontSize:15,
+    fontSize:17,
     color:'white',
   },
 //   image_bus:{

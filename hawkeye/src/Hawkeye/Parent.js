@@ -18,6 +18,10 @@ const Parent = () => {
 const styles = StyleSheet.create({
   parent: {
     flexDirection:'row',
+    alignItems:"center",
+    justifyContent:'space-between',
+    marginTop:20,
+    paddingHorizontal:20,
   },
   parent_name: {
     color: 'black',
@@ -30,6 +34,8 @@ const styles = StyleSheet.create({
   },
   parent_date: {
     color: '#74777a',
+    fontSize:15,
+    fontWeight:400,
   },
 });
 
