@@ -15,7 +15,7 @@ const HawkeyeHeader = () => {
 
 const styles = StyleSheet.create({
   header_main: {
-    height: 200,
+    height: 180,
     backgroundColor: '#1d3882',
     borderBottomLeftRadius: 50,
     borderBottomRightRadius: 50,
@@ -31,17 +31,18 @@ const styles = StyleSheet.create({
   header_text: {
     fontSize: 42,
     fontWeight: '400',
-    fontFamily: 'sans-serif',
+    fontFamily: 'popins',
     color: '#ffffff',
     marginTop: 25,
   },
   header_text2: {
     fontSize: 15,
     fontWeight: '500',
+    marginTop:-7,
   },
   subHeader: {
     fontSize: 20,
-    marginTop: 15,
+    marginTop: 13,
     color: '#d3db3d',
     fontWeight: 500,
   },

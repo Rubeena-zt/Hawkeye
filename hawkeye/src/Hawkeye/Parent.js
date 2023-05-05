@@ -2,14 +2,18 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
 const Parent = () => {
+  const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+  const currentDate = new Date().toLocaleDateString('en-US', options);
+  const currentTime = new Date().toLocaleTimeString(); 
+
   return (
     <View style={styles.parent}>
       <View>
         <Text style={styles.parent_name}>Rajendran Nair</Text>
-        <Text style={styles.parent_date}>Thursday,May 4 2023</Text>
+        <Text style={styles.parent_date}>{currentDate}</Text>
       </View>
       <View>
-        <Text style={styles.parent_time}>10:28 AM</Text>
+        <Text style={styles.parent_time}>{currentTime}</Text>
       </View>
     </View>
   );
@@ -20,7 +24,7 @@ const styles = StyleSheet.create({
     flexDirection:'row',
     alignItems:"center",
     justifyContent:'space-between',
-    marginTop:20,
+    marginTop:10,
     paddingHorizontal:20,
   },
   parent_name: {

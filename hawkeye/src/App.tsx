@@ -3,7 +3,9 @@ import {StyleSheet, Text, View, Image} from 'react-native';
 import HawkeyeHeader from './Hawkeye/HawkeyeHeader';
 import HawkeyeHeaderRight from './Hawkeye/HawkeyeHeaderRight';
 import Parent from './Hawkeye/Parent';
-import Button from './Hawkeye/Button/Button';
+import ButtonIcons from './Hawkeye/Button/ButtonIcons';
+
+// import ButtonCustom from './Hawkeye/Button/Button';
 
 function App(): JSX.Element {
   return (
@@ -30,7 +32,8 @@ function App(): JSX.Element {
         <Text style={styles.apply}>Apply Leave</Text>
       </View>
       <View>
-        {/* <Button /> */}
+        {/* <ButtonCustom /> */}
+        <ButtonIcons />
         <Text>fyeffdsj</Text>
       </View>
     </View>
@@ -54,11 +57,11 @@ const styles = StyleSheet.create({
   header_right: {},
   image_bus: {
     width: 170,
-    height: 150,
+    height: 130,
     marginTop: 100,
     resizeMode: 'stretch',
     marginLeft: 220,
-    marginTop: -120,
+    marginTop: -100,
   },
   message: {
     color: 'red',
@@ -66,7 +69,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     textAlign: 'center',
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginBottom: 8,
   },
   apply: {
     color: '#584fd1',
